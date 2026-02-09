@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
+    <header>
          <div class="container">
             <h1>Mon portfolio personnel</h1>
         
@@ -24,15 +24,30 @@
 
         </div> 
     </header>
+
     <main>
-    <section>
-        <div class="container">
-        <h2>Qui suis-je ?</h2>
-        <img src="" alt="">
-        Je suis <strong>Madouléton Antelvy Richnel KANLISSOU </strong>, née le 05 Juillet 2008 à Cotonou. Je suis étudiant en deuxième année de Mathématiques Informatique appliquée (<span style="color: red;">MIA</span>), à la Faculté des Sciences et Techniques de l'Université d'Abomey-Calavi.
-        <br>Voici mon portfolio professionel.
+        <section>
+            <div class="container">
+            <h2>Me contacter</h2>
+        
+                <h3>Formulaire de contact</h3>
+            <p>Si vous souhaitez me laisser un message vous pouvez remplir ce formulaire</p>
+        <form action="traitement.php" method="post">
+            <br><label for="name">NOM</label>
+            <br><input type="text" id="name" placeholder="Entrez votre nom">
+            <br><br><label for="prenoms">Prenoms</label>
+            <br><textarea name="prenoms" id="prenoms" placeholder="Entrez vos prenoms" cols="30" rows="1"></textarea>
+            <br><br><label for="email">Email</label>
+            <br><input name="email" id="email" placeholder="Entrez votre email">
+            <br><br><label for="message">Message</label>
+            <br><textarea name="message" id="message" rows="10" cols="100"></textarea>
+        
+            <p><button type="submit">Valider</button></p>
+        </form>
+        <h3>M'envoyer un mail</h3>
+        <p>Si vous préferez m'écrire un mail cliquez sur le button : <a href="mailto:richnelkanlissou@gmail.com"><button>Envoie email: </button></a></p>
         </div>
-    </section>
+        </section>
     </main>
     <footer>
         <div class="container">
