@@ -15,8 +15,18 @@ header {
 
 footer {
   background-color: #259ceb;
-  text-align: center;
   padding-left: 25%;
+}
+
+.footer1 {
+  display: inline-block;
+  position: relative;
+}
+
+.footer2 {
+  display: inline-block;
+  height: 100px;
+  padding-top: 15px;
 }
 
 footer a {
@@ -27,7 +37,7 @@ footer a {
   padding: 12px;
   color: #259ceb; 
   font-size: 30px;
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 section {
@@ -38,6 +48,12 @@ section {
   margin-right: 10px;
   margin-left: 10px;
   border-radius: 10px;
+}
+
+.containerf {
+  max-width: 1100px;
+  padding: 20px;
+  text-align: center;
 }
 
 .section1 {
@@ -115,7 +131,7 @@ label {
 }
 
 input {
-  width: 30%;
+  width: 35%;
   font-size: 16px;
   padding: 10px 14px;
   height: 40px;
@@ -129,7 +145,7 @@ input {
 textarea {
   border: 1px solid black;
   border-radius: 6px;
-  width: 55%;
+  width: 60%;
   height: 150px;
   resize: vertical;
   padding: 5px;
@@ -175,6 +191,22 @@ button {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 750px) {
+  input {
+    width: 80% !important;
+  }
+  textarea {
+    width: 85% !important;
+  }
+  ul {
+    margin: 0px !important;
+  }
+  header h1 {
+    font-size: 38px;
+  }  
+}
+
+@media screen and (orientation: landscape){}
 
 
 
