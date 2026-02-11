@@ -4,55 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-         <div class="container">
+ <header>
+        <div class="container">
             <h1>Mon portfolio personnel</h1>
-        
             <nav>
-            <ol type="I" id="nav">
-            <li><a href="index.html" target="_blank" title="Acceder à l'Acceuil"><button>Acceuil</button></a></li>
-            <li><a href="skills.html" target="_blank" title="Compétences"><button>Compétences</button></a></li>
-            <li><a href="projects.html" target="_blank" title="Projets"><button>Projets</button></a></li>
-            <li><a href="education.html" target="_blank" title="Education"><button>Education</button></a></li>
-            <li><a href="experience.html" target="_blank" title="Experience professionelle"><button>Experience</button></a></li>
-            <li><a href="contact.html" target="_blank" title="Formulaire de contact"><button>Contact</button></a></li>
-            </ol> 
+                <ul>
+                    <li><a href="index.html" target="_blank" title="Acceder à l'Acceuil"><button>Acceuil</button></a></li>
+                    <li><a href="skills.html" target="_blank" title="Compétences"><button>Compétences</button></a></li>
+                    <li><a href="projects.html" target="_blank" title="Projets"><button>Projets</button></a></li>
+                    <li><a href="education.html" target="_blank" title="Education"><button>Education</button></a></li>
+                    <li><a href="contact.html" target="_blank" title="Formulaire de contact"><button>Contact</button></a></li>
+                </ul> 
             </nav>
-
         </div> 
     </header>
 
     <main>
         <section>
             <div class="container">
-            <h2>Me contacter</h2>
-        
+                <h2>Me contacter</h2>
+            
                 <h3>Formulaire de contact</h3>
-            <p>Si vous souhaitez me laisser un message vous pouvez remplir ce formulaire</p>
-        <form action="traitement.php" method="post">
-            <br><label for="name">NOM</label>
-            <br><input type="text" id="name" placeholder="Entrez votre nom">
-            <br><br><label for="prenoms">Prenoms</label>
-            <br><textarea name="prenoms" id="prenoms" placeholder="Entrez vos prenoms" cols="30" rows="1"></textarea>
-            <br><br><label for="email">Email</label>
-            <br><input name="email" id="email" placeholder="Entrez votre email">
-            <br><br><label for="message">Message</label>
-            <br><textarea name="message" id="message" rows="10" cols="100"></textarea>
-        
-            <p><button type="submit">Valider</button></p>
-        </form>
-        <h3>M'envoyer un mail</h3>
-        <p>Si vous préferez m'écrire un mail cliquez sur le button : <a href="mailto:richnelkanlissou@gmail.com"><button>Envoie email: </button></a></p>
-        </div>
+                <p>Si vous souhaitez me laisser un message vous pouvez remplir ce formulaire</p>
+                <fieldset>
+                    <form action="traitement.php" method="post">
+                        <br><label for="name">Nom</label>
+                        <br><input type="text" id="name" id="nom" placeholder="Entrez votre nom" autocomplete="on" autofocus>
+                        <br><label for="prenoms">Prenoms</label>
+                        <br><input type="text" id="prenoms" name="prenoms" placeholder="Entrez votre nom" autocomplete="on" autofocus>
+                        <br><label for="email">Email</label>
+                        <br><input type="email" id="email" name="email" placeholder="Entrez votre email" autocomplete="on" autofocus>
+                        <br><label for="message">Message</label>
+                        <br><textarea name="message" id="message"></textarea>
+                    
+                        <p><input type="submit" value="Envoyer"></p>
+                    </form>
+                </fieldset> 
+                <h3>M'envoyer un mail</h3>
+                <p>Si vous préferez m'écrire un mail cliquez sur le button : </p>
+                    <p><a href="mailto:richnelkanlissou@gmail.com"><button>Envoie email: </button></a></p>
+            </div>
         </section>
     </main>
+    
     <footer>
         <div class="container">
-            <p>© 2026 - RICHNEL KANLISSOU</p>
+            <p> 
+                © 2026 - RICHNEL KANLISSOU. Tous droits réservés.
+                <a href="https://www.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/?_rdc=1&_rdr" ><i class="fab fa-instagram"></i></a>
+            </P> 
         </div>
     </footer>
-</body>
 </html>
