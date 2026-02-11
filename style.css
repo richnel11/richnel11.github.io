@@ -216,6 +216,9 @@ button {
     padding: 10px !important;
     padding-left: 2px !important;
   }
+  .section1 {
+    height: 1000px;
+  }
 
 }
 
