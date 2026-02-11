@@ -204,8 +204,18 @@ button {
     margin: 0px !important;
   }
   header h1 {
-    font-size: 35px;
+    font-size: 30px;
   }  
+  footer {
+    padding-left: 2%;
+  }
+  footer a {
+    margin-left: 5px;
+  }
+  .section1 {
+    height: 1200px;
+  }
+  
 }
 
 @media screen and (orientation: landscape){}
